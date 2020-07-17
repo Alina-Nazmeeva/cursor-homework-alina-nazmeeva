@@ -3,39 +3,39 @@ const beefPrice = 123.965;
 const chickenPrice = 90.2345;
 const cash = 500;
 
-document.writeln("Base<br>");
+document.writeln("<p>Base</p>");
 
-document.writeln("Мax price: " + Math.max(bananaPrice, beefPrice, chickenPrice) + "<br>");
-document.writeln("Мin price: " + Math.min(bananaPrice, beefPrice, chickenPrice) + "<br>");
+document.writeln("<p>Мax price: " + Math.max(bananaPrice, beefPrice, chickenPrice) + "</p>");
+document.writeln("<p>Мin price: " + Math.min(bananaPrice, beefPrice, chickenPrice) + "</p>");
 
 const totalPrice = bananaPrice + beefPrice + chickenPrice;
-document.writeln("Total price: " + totalPrice + "<br>");
+document.writeln("<p>Total price: " + totalPrice + "</p>");
 
 const totalIntPrice = Math.floor(bananaPrice) + Math.floor(beefPrice) + Math.floor(chickenPrice);
-document.writeln("Total price without coins: " + totalIntPrice + "<br>");
+document.writeln("<p>Total price without coins: " + totalIntPrice + "</p>");
 
 const totalPriceRoundToHundreds = Math.round(totalPrice/100) * 100;
-document.writeln("Total price rounded to hundreds: " + totalPriceRoundToHundreds + "<br>");
+document.writeln("<p>Total price rounded to hundreds: " + totalPriceRoundToHundreds + "</p>");
 
 const isEven = Math.floor(totalPrice)%2 === 0;
-document.writeln("Is rounded total price an even? " + isEven + "<br>");
+document.writeln("<p>Is rounded total price an even? " + isEven + "</p>");
 
 const change = cash - totalPrice;
-document.writeln("Change for 500: " + change + "<br>");
+document.writeln("<p>Change for 500: " + change + "</p>");
 
 const averagePrice = Math.round(totalPrice/3*100)/100;
-document.writeln("Average price: " + averagePrice + "<br>");
+document.writeln("<p>Average price: " + averagePrice + "</p>");
 
 const discount = Math.round(Math.random()*50);
-document.writeln("Discount: " + discount + "%<br>");
+document.writeln("<p>Discount: " + discount + "%</p>");
 
 const amountPayable = Math.round(totalPrice/100*(100 - discount)*100)/100;
-document.writeln("Amount payable: " + amountPayable + "<br>");
+document.writeln("<p>Amount payable: " + amountPayable + "</p>");
 
 const profit = Math.round((amountPayable - totalPrice/2)*100)/100;
-document.writeln("Net Profit: " + profit + "<br>");
+document.writeln("<p>Net Profit: " + profit + "</p>");
 
-document.writeln("<br>Advanced<br>");
+document.writeln("<p>Advanced</p>");
 
 const advancedTask = `Максимальна ціна: ${Math.max(bananaPrice, beefPrice, chickenPrice)}<br>
 Мінімальна ціна: ${Math.min(bananaPrice, beefPrice, chickenPrice)}<br>
