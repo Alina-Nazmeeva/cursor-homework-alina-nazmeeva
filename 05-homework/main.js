@@ -148,10 +148,10 @@ console.log(`Розбиває кожне слово на склади по 3 б�
 // нагуглила((
 function generateCombinations(word){
     if(!word || typeof(word) !== "string"){
-        return "Please, enter a string";
+        throw new Error("Please, enter a string");
     }
     if(word.length > 10){
-        return "Please, enter 10 letter maximum";
+        throw new Error("Please, enter 10 letter maximum");
     }
     if(word.length === 1){
         return word;
