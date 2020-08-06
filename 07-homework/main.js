@@ -18,34 +18,34 @@ const litva = {
 в якійсь з країн. Функція повинна викликатись через call та працювати з даними через this */
 
 function getMyTaxes(salary){
-    console.log(salary * this.tax);
+    return salary * this.tax;
 }
 console.log("Task#1");
-getMyTaxes.call(ukraine, 2000);
-getMyTaxes.call(latvia, 2000);
-getMyTaxes.call(litva, 2000);
+console.log(getMyTaxes.call(ukraine, 2000));
+console.log(getMyTaxes.call(latvia, 2000));
+console.log(getMyTaxes.call(litva, 2000));
 
 /*2. Створіть функцію getMiddleTaxes.call(country) -> number; – яка рахує скільки у середньому податків платять IT-спеціалісти 
 у кожній країні. (tax * middleSalary). Функція повинна викликатись через call та працювати з даними через this */
 
 function getMiddleTaxes(){
-    console.log(this.middleSalary * this.tax);
+    return this.middleSalary * this.tax;
 }
 console.log("Task#2");
-getMiddleTaxes.call(ukraine);
-getMiddleTaxes.call(latvia);
-getMiddleTaxes.call(litva);
+console.log(getMiddleTaxes.call(ukraine));
+console.log(getMiddleTaxes.call(latvia));
+console.log(getMiddleTaxes.call(litva));
 
 /*3.Створіть функцію getTotalTaxes.call(country) -> number; – яка рахує, скільки всього податків платять IT-спеціалісти 
 у кожній країні. (tax * middleSalary * vacancies). Функція повинна викликатись через call та працювати з даними через this */
 
 function getTotalTaxes(){
-    console.log(this.middleSalary * this.tax * this.vacancies);
+    return this.middleSalary * this.tax * this.vacancies;
 }
 console.log("Task#3");
-getTotalTaxes.call(ukraine);
-getTotalTaxes.call(latvia);
-getTotalTaxes.call(litva);
+console.log(getTotalTaxes.call(ukraine));
+console.log(getTotalTaxes.call(latvia));
+console.log(getTotalTaxes.call(litva));
 
 /*4. Створіть функцію getMySalary(country) – яка буде писати в консоль об'єкт виду: { salary: number, taxes: number, 
 profit: number } кожні 10 секунд. Значення salary – генеруйте випадковим чином у діапазоні 1500-2000. 
