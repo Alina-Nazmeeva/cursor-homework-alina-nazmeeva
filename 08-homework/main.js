@@ -13,16 +13,13 @@ class Student{
     }
 
     get marks(){
-        if(this._active) return this._marks;
-        else return null;  
+        return this._active ? this._marks : null;
     }
 
     set marks(mark){
         if(this._active){
             this._marks.push(mark);
-            return this._marks;
         }
-        else return null; 
     }
 
     getAverageMark(){
@@ -46,7 +43,7 @@ class BudgetStudent extends Student {
 
     getScholarship(){
         if(this.getAverageMark() >= 4 && this._active){
-            console.log("Ви отримали", this._scholarship, " грн стипендії");
+            console.log("Ви отримали", this._scholarship, "грн стипендії");
         }        
     }
 }
