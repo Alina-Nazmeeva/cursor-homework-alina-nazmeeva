@@ -2,7 +2,10 @@ const generateRandomColor = () => Array.from({length: 3}).map(() => Math.round(M
 
 function generateBlocks(){
     const blocks = document.querySelectorAll('.squares');
-    blocks.forEach(block => block.style.backgroundColor = `rgb(${generateRandomColor()})`);
+    blocks.forEach(block => {
+        block.style.backgroundColor = `rgb(${generateRandomColor()})`;
+        block.style.border = "3px solid black";
+    });
 }
 
 function generateBlocksInterval(){
