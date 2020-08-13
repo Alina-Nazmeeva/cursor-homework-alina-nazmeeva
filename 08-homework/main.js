@@ -39,6 +39,7 @@ class BudgetStudent extends Student {
     constructor(university, course, fullName){
         super(university, course, fullName);
         this._scholarship = 1400;
+        setInterval(() => this.getScholarship(), 30000);
     }
 
     getScholarship(){
@@ -73,4 +74,3 @@ for(let mark of previousMarks){
 }
 console.log(budgetStudent.getInfo());
 console.log("Marks: ", budgetStudent.marks);
-budgetStudent.getScholarship();
