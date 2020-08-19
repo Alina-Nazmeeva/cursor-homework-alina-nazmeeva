@@ -45,9 +45,11 @@ kbd{
     display: block;
     font-size: 3.5rem;
     color: #ffc600;
+    height: 50px;
 }
 span{
     font-size: 1rem;
+    vertical-align: middle;
 }
 .highlighted{
     transform: scale(1.1);
