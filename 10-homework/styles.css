@@ -8,7 +8,7 @@ body{
     margin: 0;
     display: flex;
     align-items: center;
-    font-family: cursive;
+    font-family: sans-serif;
 
 }
 #wrapper{
@@ -32,20 +32,13 @@ body{
     border: .4rem solid rgb(30,30,30);
     border-radius: .5rem;
     text-align: center;
-   
-    /* margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
-    transition: all .07s ease;
-    width: 10rem;*/
     background: rgba(30,30,30,0.4);
-    /* text-shadow: 0 0 .5rem black; */
 }
 kbd{
     display: block;
     font-size: 3.5rem;
     color: #ffc600;
-    height: 50px;
+    height: 60px;
 }
 span{
     font-size: 1rem;
