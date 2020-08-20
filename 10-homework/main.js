@@ -22,8 +22,9 @@ keys.forEach((key) => {
 });
 
 document.addEventListener('keypress', function(event){
-    if(document.getElementById(event.keyCode)){
-        highlight.call(document.getElementById(event.keyCode));
-        playAudio.call(document.getElementById(event.keyCode));
+    if(document.getElementById(event.code)){
+        console.log(event.code);
+        highlight.call(document.getElementById(event.code));
+        playAudio.call(document.getElementById(event.code));
     }
 });
