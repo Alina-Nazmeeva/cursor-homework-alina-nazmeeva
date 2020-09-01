@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework #12</title>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="button-area">
+        <form name="getFilm">
+            <label for="filmNumber">Enter the film number:</label>
+            <input type="number" id="filmNumber" name="filmNumber" min="1" max="6" value="2">
+            <button type="button" class="info-btn" id="characters-btn">GET CHARACTERS INFO</button>
+        </form>
+        <button type="button" class="info-btn" id="planets-btn">GET PLANETS INFO</button>
+        <label class="switch">
+            <span>Wookiee</span>
+            <input id="wookiee-btn" type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div id="info-area"></div>
+    <div id="page-buttons-wrapper">
+        <button class="page-buttons" id="prev-button" hidden="true"> &lt </button>
+        <button class="page-buttons" id="next-button" hidden="true"> &gt </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
