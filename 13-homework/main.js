@@ -6,7 +6,10 @@ function* createIdGenerator(){
 }
 const idGenerator = createIdGenerator();
 const paragraph = document.getElementById("paragraph");
-paragraph.innerText = `Generated IDs: ${idGenerator.next().value}, ${idGenerator.next().value}, ${idGenerator.next().value}`;
+paragraph.innerText = 'Generated IDs: ';
+document.getElementById('id-button').addEventListener('click', () => {
+    paragraph.innerText += ` ${idGenerator.next().value} `;
+});
 
 function* createFontGenerator(size){
     let fontSize = size;
@@ -26,7 +29,7 @@ document.getElementById('up-button').addEventListener('click', () => {
     document.body.style.fontSize = (fontGenerator.next("up").value).toString() + 'px';
     console.log(`Current fontSize: ${fontGenerator.next().value}`);
 });
-upButton = document.getElementById('down-button').addEventListener('click', () => {
+document.getElementById('down-button').addEventListener('click', () => {
     document.body.style.fontSize = (fontGenerator.next("down").value).toString() + 'px';
     console.log(`Current fontSize: ${fontGenerator.next().value}`);
 });
