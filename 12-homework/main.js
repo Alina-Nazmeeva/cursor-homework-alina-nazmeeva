@@ -5,22 +5,22 @@ let arePlanetsDisplayed = false;
 let currentPage = 1;
 
 const charactersPhotos = {
-    'http://swapi.dev/api/people/1/': 'images/Luke Skywalker.jpg',
-    'http://swapi.dev/api/people/2/': 'images/C-3PO.jpg',
-    'http://swapi.dev/api/people/3/': 'images/R2-D2.jpg',
-    'http://swapi.dev/api/people/4/': 'images/Darth Vader.jpg',
-    'http://swapi.dev/api/people/5/': 'images/Leia Organa.jpg',
-    'http://swapi.dev/api/people/10/': 'images/Obi-Wan Kenobi.jpg',
-    'http://swapi.dev/api/people/13/': 'images/Chewbacca.jpg',
-    'http://swapi.dev/api/people/14/': 'images/Han Solo.jpg',
-    'http://swapi.dev/api/people/18/': 'images/Wedge Antilles.jpg',
-    'http://swapi.dev/api/people/20/': 'images/Yoda.jpg',
-    'http://swapi.dev/api/people/21/': 'images/Palpatine.jpg',
-    'http://swapi.dev/api/people/22/': 'images/Boba Fett.jpg',
-    'http://swapi.dev/api/people/23/': 'images/IG-88.jpg',
-    'http://swapi.dev/api/people/24/': 'images/Bossk.jpg',
-    'http://swapi.dev/api/people/25/': 'images/Lando Calrissian.jpg',
-    'http://swapi.dev/api/people/26/': 'images/Lobot.jpg',
+    'https://swapi.dev/api/people/1/': 'images/Luke Skywalker.jpg',
+    'https://swapi.dev/api/people/2/': 'images/C-3PO.jpg',
+    'https://swapi.dev/api/people/3/': 'images/R2-D2.jpg',
+    'https://swapi.dev/api/people/4/': 'images/Darth Vader.jpg',
+    'https://swapi.dev/api/people/5/': 'images/Leia Organa.jpg',
+    'https://swapi.dev/api/people/10/': 'images/Obi-Wan Kenobi.jpg',
+    'https://swapi.dev/api/people/13/': 'images/Chewbacca.jpg',
+    'https://swapi.dev/api/people/14/': 'images/Han Solo.jpg',
+    'https://swapi.dev/api/people/18/': 'images/Wedge Antilles.jpg',
+    'https://swapi.dev/api/people/20/': 'images/Yoda.jpg',
+    'https://swapi.dev/api/people/21/': 'images/Palpatine.jpg',
+    'https://swapi.dev/api/people/22/': 'images/Boba Fett.jpg',
+    'https://swapi.dev/api/people/23/': 'images/IG-88.jpg',
+    'https://swapi.dev/api/people/24/': 'images/Bossk.jpg',
+    'https://swapi.dev/api/people/25/': 'images/Lando Calrissian.jpg',
+    'https://swapi.dev/api/people/26/': 'images/Lobot.jpg',
 };
 
 function getCharacter(config = {}){
@@ -29,7 +29,8 @@ function getCharacter(config = {}){
         return res.data.characters;
     }).then((res) => {
         return Promise.all(res.map((character) => {
-            return axios.get(character, config).then((res) => {
+            const httpsCharacter = character.slice(0, 4) + 's' + character.slice(4);
+            return axios.get(httpsCharacter, config).then((res) => {
                 return res;
             }).catch((err) => {
                 console.log(err);
@@ -48,7 +49,6 @@ function getGenderIcon(gender){
 }
 
 function displayCharacter(characters = []){
-    console.log(characters);
     const container = document.getElementById('info-area');
     container.innerHTML = '';
     document.getElementById('prev-button').setAttribute('hidden', 'true');
@@ -298,3 +298,5 @@ function wookieeTranslation(){
     }
 }
 document.getElementById('wookiee-btn').addEventListener('click', wookieeTranslation);
+
+axios.get(`${BASE}films/2`).then(console.log);
