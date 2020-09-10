@@ -1,0 +1,33 @@
+.post{
+    background-color: rgb(21, 32, 43);
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+.header{
+    display: flex;
+    margin-bottom: 10px;
+}
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-position: 50% 50%;
+}
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 10px;
+} 
+span{
+    color: rgb(94, 108, 120);
+}
+.photo{
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;    
+    border-radius: 10px;
+}
