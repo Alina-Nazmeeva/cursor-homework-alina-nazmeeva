@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/cursor-homework-alina-nazmeeva/static/css/main.ef8be8b4.chunk.css",
-    "main.js": "/cursor-homework-alina-nazmeeva/static/js/main.c39671bb.chunk.js",
-    "main.js.map": "/cursor-homework-alina-nazmeeva/static/js/main.c39671bb.chunk.js.map",
-    "runtime-main.js": "/cursor-homework-alina-nazmeeva/static/js/runtime-main.7786a252.js",
-    "runtime-main.js.map": "/cursor-homework-alina-nazmeeva/static/js/runtime-main.7786a252.js.map",
-    "static/js/2.e7e5044d.chunk.js": "/cursor-homework-alina-nazmeeva/static/js/2.e7e5044d.chunk.js",
-    "static/js/2.e7e5044d.chunk.js.map": "/cursor-homework-alina-nazmeeva/static/js/2.e7e5044d.chunk.js.map",
-    "index.html": "/cursor-homework-alina-nazmeeva/index.html",
-    "precache-manifest.97556e8591e73c15fa81335bf0263d82.js": "/cursor-homework-alina-nazmeeva/precache-manifest.97556e8591e73c15fa81335bf0263d82.js",
-    "service-worker.js": "/cursor-homework-alina-nazmeeva/service-worker.js",
-    "static/css/main.ef8be8b4.chunk.css.map": "/cursor-homework-alina-nazmeeva/static/css/main.ef8be8b4.chunk.css.map",
-    "static/js/2.e7e5044d.chunk.js.LICENSE.txt": "/cursor-homework-alina-nazmeeva/static/js/2.e7e5044d.chunk.js.LICENSE.txt"
+    "main.css": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/css/main.ef8be8b4.chunk.css",
+    "main.js": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/js/main.522b118a.chunk.js",
+    "main.js.map": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/js/main.522b118a.chunk.js.map",
+    "runtime-main.js": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/js/runtime-main.9d493d14.js",
+    "runtime-main.js.map": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/js/runtime-main.9d493d14.js.map",
+    "static/js/2.e7e5044d.chunk.js": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/js/2.e7e5044d.chunk.js",
+    "static/js/2.e7e5044d.chunk.js.map": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/js/2.e7e5044d.chunk.js.map",
+    "index.html": "/cursor-homework-alina-nazmeeva/15-homework/index.html/index.html",
+    "precache-manifest.ba8ef5dacc669344e60cbe592d1dac1a.js": "/cursor-homework-alina-nazmeeva/15-homework/index.html/precache-manifest.ba8ef5dacc669344e60cbe592d1dac1a.js",
+    "service-worker.js": "/cursor-homework-alina-nazmeeva/15-homework/index.html/service-worker.js",
+    "static/css/main.ef8be8b4.chunk.css.map": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/css/main.ef8be8b4.chunk.css.map",
+    "static/js/2.e7e5044d.chunk.js.LICENSE.txt": "/cursor-homework-alina-nazmeeva/15-homework/index.html/static/js/2.e7e5044d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7786a252.js",
+    "static/js/runtime-main.9d493d14.js",
     "static/js/2.e7e5044d.chunk.js",
     "static/css/main.ef8be8b4.chunk.css",
-    "static/js/main.c39671bb.chunk.js"
+    "static/js/main.522b118a.chunk.js"
   ]
 }
